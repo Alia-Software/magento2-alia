@@ -1,0 +1,6 @@
+{
+  "name": "alia/magento2",
+  "description": "Connects a Magento store to Alia for popups, discount codes and revenue reporting.",
+  "type": "magento2-module",
+  "license": "OSL-3.0"
+}
