@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Editing this file changes nothing on stores that already ran RegisterIntegration; that needs a new data patch. -->
+<integrations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Integration:etc/integration/config.xsd">
+    <integration name="Alia">
+        <email>help@alialearn.com</email>
+        <endpoint_url>https://backend.alia-prod.com/webhooks/magento/activate</endpoint_url>
+        <identity_link_url>https://app.aliapopups.com/magento/connect</identity_link_url>
+    </integration>
+</integrations>

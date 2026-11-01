@@ -1,0 +1,12 @@
+{
+  "alia_quote_visitor": {
+    "column": {
+      "quote_id": true,
+      "visitor": true
+    },
+    "constraint": {
+      "PRIMARY": true,
+      "ALIA_QUOTE_VISITOR_QUOTE_ID_QUOTE_ENTITY_ID": true
+    }
+  }
+}

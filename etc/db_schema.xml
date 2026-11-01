@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="alia_quote_visitor" resource="checkout" engine="innodb" comment="Alia visitor of each cart">
+        <column xsi:type="int" name="quote_id" unsigned="true" nullable="false" identity="false" comment="Quote ID"/>
+        <column xsi:type="varchar" name="visitor" nullable="false" length="1024" comment="Alia visitor token"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="quote_id"/>
+        </constraint>
+        <constraint xsi:type="foreign" referenceId="ALIA_QUOTE_VISITOR_QUOTE_ID_QUOTE_ENTITY_ID" table="alia_quote_visitor"
+                    column="quote_id" referenceTable="quote" referenceColumn="entity_id" onDelete="CASCADE"/>
+    </table>
+</schema>
